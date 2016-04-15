@@ -100,6 +100,7 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\Booking.cs" />
+    <Compile Include="Model\Guest.cs" />
     <Compile Include="Model\Hotel.cs" />
     <Compile Include="Model\Room.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
