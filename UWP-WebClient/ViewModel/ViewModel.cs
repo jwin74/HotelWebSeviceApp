@@ -1,5 +1,4 @@
-﻿using System.Collections.ObjectModel;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using UWP_WebClient.Annotations;
 using UWP_WebClient.Model;
@@ -8,14 +7,16 @@ namespace UWP_WebClient.ViewModel
 {
     public class ViewModel : INotifyPropertyChanged
     {
-        public GuestCatalogSingleton GuestCatalogSingleton { get; set; }
-
         public ViewModel()
         {
             GuestCatalogSingleton = GuestCatalogSingleton.Instance;
         }
 
+        public GuestCatalogSingleton GuestCatalogSingleton { get; set; }
+        public static Guest SelectedGuest { get; set; }
+
         #region PropertyChangedSupport
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         [NotifyPropertyChangedInvocator]
@@ -23,6 +24,7 @@ namespace UWP_WebClient.ViewModel
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
+
         #endregion
     }
 }
