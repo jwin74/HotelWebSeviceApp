@@ -1,6 +1,6 @@
 using System;
 
-namespace AdvWebApi_UWP_App.model
+namespace UWP_WebClient.Model
 {
     public partial class Booking
     {

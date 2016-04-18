@@ -1,6 +1,7 @@
-﻿using System.Collections.ObjectModel;
+﻿using System;
+using System.Collections.ObjectModel;
 
-namespace AdvWebApi_UWP_App.model
+namespace UWP_WebClient.Model
 {
     public class GuestCatalogSingleton
     {
